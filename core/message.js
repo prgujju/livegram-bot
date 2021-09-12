@@ -2,6 +2,7 @@ const bot = require('./bot');
 const admin = process.env.ADMIN;
 
 bot.on('message', ctx => {
+  if (ctx.chat.type !== 'private') return;
   if (ctx.chat.id !== parseInt(admin)) {
     if (ctx.message.text === '/start') {
       ctx.forwardMessage(admin)
