@@ -23,7 +23,7 @@ bot.on('message', ctx => {
     }
     if (ctx.message.text === '/help') {
       ctx.forwardMessage(admin)
-      const msg = `Bu bot 100% <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a> dasturlash tilida yozilgan, <a href="https://en.wikipedia.org/wiki/Node.js">NodeJS</a> yordamida\nBotning <a href="https://github.com/sad1go0">source kod</a>lari, bemalol kirib ko'rinishingiz mumkin!\nAgar sizgaham shunday, va boshqacha Telegram bot'lar kerak bo'lsa murojaat qilishingiz mumkin :)`;
+      const msg = `Bu bot 100% <a href="https://en.wikipedia.org/wiki/JavaScript">JavaScript</a> dasturlash tilida yozilgan, <a href="https://en.wikipedia.org/wiki/Node.js">NodeJS</a> yordamida\nBotning <a href="https://github.com/sad1go0/livegrambot.git">source kod</a>lari, bemalol kirib ko'rinishingiz mumkin!\nAgar sizgaham shunday, va boshqacha Telegram bot'lar kerak bo'lsa murojaat qilishingiz mumkin :)`;
       return ctx.replyWithHTML(msg, { disable_web_page_preview: true });
     }
     ctx.forwardMessage(admin)
