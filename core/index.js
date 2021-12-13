@@ -1,2 +1,0 @@
-require('./contact');
-require('./message');

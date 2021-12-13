@@ -1,0 +1,1 @@
+export { isSubscribe } from './isSubscribe';
