@@ -12,6 +12,7 @@ const message = async (ctx: Context) => {
     if (ctx.message?.voice) return ctx.api.sendVoice(id, ctx.message.voice.file_id);
     if (ctx.message?.audio) return ctx.api.sendAudio(id, ctx.message.audio.file_id);
     if (ctx.message?.video) return ctx.api.sendVideo(id, ctx.message.video.file_id);
+    if (ctx.message?.document) return ctx.api.sendDocument(id, ctx.message.document.file_id);
     if (ctx.message?.location) return ctx.api.sendLocation(id, ctx.message.location.latitude, ctx.message.location.longitude);
     if (ctx.message?.sticker) return ctx.api.sendSticker(id, ctx.message.sticker.file_id);
     if (ctx.message?.animation) return ctx.api.sendAnimation(id, ctx.message.animation.file_id);

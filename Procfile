@@ -1,1 +1,1 @@
-worker: node src/index.ts
+worker: yarn build && node dist/index.js

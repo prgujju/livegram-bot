@@ -7,7 +7,7 @@ if (!process.env.ADMIN) throw new Error('ADMIN environment variable is required'
 const bot: Bot<Context, Api<RawApi>> = new Bot(process.env.BOT_TOKEN);
 
 bot.init()
-  .then(() => console.log(`Bot @${bot.botInfo.username} has been started`))
+  .then(() => console.log(`Bot has successfully launched`))
   .catch(() => console.log('Cannot start bot'))
 
 bot.start()

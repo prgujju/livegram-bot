@@ -1,0 +1,1 @@
+export { shareContact } from './keyboards';
