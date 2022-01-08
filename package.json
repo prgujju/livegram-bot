@@ -1,18 +1,23 @@
 {
   "name": "livegrambot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Telegram livegram bot for spams",
   "main": "src/index.ts",
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "dev": "nodemon src/index.ts"
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sad1go0/livegrambot.git"
   },
   "keywords": [],
-  "author": "Abbasov Sayidulloh <sayidullohabbasov0909@gmail.com>",
+  "author": {
+    "name": "Abbasov Sayidulloh",
+    "email": "sayidullohabbasov0909@gmail.com",
+    "url": "https://github.com/sad1go0"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/sad1go0/livegrambot/issues"
@@ -20,12 +25,11 @@
   "homepage": "https://github.com/sad1go0/livegrambot#readme",
   "dependencies": {
     "dotenv": "^10.0.0",
-    "grammy": "^1.5.3"
+    "grammy": "^1.5.3",
+    "typescript": "^4.5.3"
   },
   "devDependencies": {
     "@types/node": "^16.11.12",
-    "nodemon": "^2.0.15",
-    "ts-node": "^10.4.0",
-    "typescript": "^4.5.3"
+    "nodemon": "^2.0.15"
   }
 }
